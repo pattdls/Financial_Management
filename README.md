@@ -1,6 +1,6 @@
 # RVR SMES Financial Management System
 
-A PHP/MySQL web application for managing client records, project budgets, operating expenses, financial reports, and role-based access for a mechanical engineering services company.
+A Financial Management web application for managing client records, project budgets, operating expenses, financial reports, and role-based access for a mechanical engineering services company.
 
 ## Dashboard Preview
 
