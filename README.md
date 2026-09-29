@@ -4,10 +4,7 @@ A PHP/MySQL web application for managing client records, project budgets, operat
 
 ## Dashboard Preview
 
-Add your dashboard screenshot here so the project landing page shows the main interface on GitHub.
-
 ![Dashboard Interface](docs/dashboard-preview.png)
-
 
 ## Overview
 

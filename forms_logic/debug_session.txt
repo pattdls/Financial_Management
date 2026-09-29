@@ -440,3 +440,44 @@ Array
     [initialized_0] => 1
     [selected_project_id] => 11
 )
+Array
+(
+    [authenticated] => 1
+    [auth_user] => Array
+        (
+            [id] => 57
+            [name] => RVR ADMIN
+            [email] => rvr_admin@gmail.com
+            [role] => admin
+            [client_id] => 
+            [company_id] => 1
+        )
+
+    [last_activity] => 1790699411
+    [last_viewed_recording] => 2026-05-13 14:30:59
+    [last_viewed_archive] => 2026-05-13 14:29:56
+    [last_viewed_sessions] => 2026-09-30 00:27:45
+    [last_viewed_fsAccess] => 2026-08-28 10:18:52
+    [initialized_0] => 1
+)
+Array
+(
+    [authenticated] => 1
+    [auth_user] => Array
+        (
+            [id] => 57
+            [name] => RVR ADMIN
+            [email] => rvr_admin@gmail.com
+            [role] => admin
+            [client_id] => 
+            [company_id] => 1
+        )
+
+    [last_activity] => 1790699504
+    [last_viewed_recording] => 2026-05-13 14:30:59
+    [last_viewed_archive] => 2026-05-13 14:29:56
+    [last_viewed_sessions] => 2026-09-30 00:27:45
+    [last_viewed_fsAccess] => 2026-08-28 10:18:52
+    [initialized_0] => 1
+    [status] => <div class='alert alert-success'>Profile image updated successfully.</div>
+)
