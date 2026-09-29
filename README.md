@@ -229,10 +229,6 @@ Potential improvements could include:
 - unit/integration testing
 - clearer documentation for each admin and finance workflow
 
-## License
-
-This project does not currently include a visible license file in the root directory. Please confirm the licensing terms with the project owner before distributing or reusing it publicly.
-
 ## Conclusion
 
 This project is a business-focused financial management system for tracking projects, costs, approvals, budgets, and generated financial summaries. It is intended for internal use in a company workflow and is structured around a classic PHP + MySQL dashboard and management portal.
