@@ -37,6 +37,7 @@ This system is designed to help a business track:
 
 - PHP
 - MySQL
+- CSS (Bootstrap)
 - JavaScript / jQuery / Bootstrap
 - Composer
 - PHPMailer for email notifications
