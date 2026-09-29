@@ -1,0 +1,10 @@
+body {
+    background: white;
+    margin: 0;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Avenir', sans-serif;
+}
+
+

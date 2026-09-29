@@ -1,0 +1,620 @@
+/* THE FOLLOW STYLES ARE FOR THE NON-COMPLETED PROJECT STATUS */
+.not-completed {
+    position: relative;
+    filter: blur(3px);
+    pointer-events: none; 
+     user-select: none; 
+}
+.fs-blur {
+    position: relative;
+    filter: blur(3px);
+    pointer-events: none; 
+    user-select: none; 
+}
+.fs-clear {
+    filter: none;
+    pointer-events: auto;
+    user-select: auto;
+}
+.blur-overlay-note {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-40%, 70%);
+    background: rgba(255, 255, 255, 0.658);
+    padding: 8px 13px;
+    padding-top: 0;
+    border-radius: px;
+    text-align: center;
+    z-index: 999;
+    filter: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.568);
+}
+.fs-blur-overlay {
+    position: fixed;
+    width: 50%;
+    top: 29%;
+    left: 50%;
+    transform: translate(-40%, 70%);
+    background: rgba(255, 255, 255, 0.967);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    z-index: 999;
+    filter: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.568);
+}
+.description-unlock p{
+    font-size: 14px;
+}
+.login_btn{
+    background: linear-gradient(135deg, rgba(59, 100, 150, 0.91)  10%, rgb(62, 97, 124) 100%);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    transition: transform 0.2s ease, background 0.3s ease, color 0.3s ease;
+}
+.login_btn:hover{
+    background: linear-gradient(135deg, #2a5298, #1e3c72);
+    color: white;
+    transform: scale(1.02);
+}
+.not-completed .table th.text-light {
+    background-color: #c7cdd2c8 !important;
+    color: #495057 !important;
+    font-size: 16px;
+}
+#cash-flow_table th.not-completed {
+    background-color: #c7cdd2c8 !important;
+    color: #495057 !important;
+    font-size: 16px;
+}
+.not-completed .table td{
+  color: #737373 !important;
+  font-size: 13px;
+}
+
+.not-completed .table .text-success {
+    color: #878787 !important;
+}
+
+.not-completed .table .line-total {
+    border-bottom-color: #adb5bd !important;
+}
+.bg-completed {
+  background-color: rgb(62, 97, 124);
+  color: #f5eedc;
+}
+.btn-outline-secondary{
+    font-size: 14px;
+}
+.btn-outline-orange{
+    color: #dda853;
+    border: 1px solid #dda853;
+    background-color: transparent;
+    font-size: 14px;
+}
+.btn-outline-orange:hover,
+.btn-outline-orange:focus {
+    background-color: #dda853;
+    color: white;
+    border-color: #dda853;
+}
+/* Remove default background and border */
+.financial-nav .nav-item{
+    border-bottom: none; 
+    background: transparent; 
+    margin-right: 50px;
+    font-size: 16px;
+}
+
+/* Remove individual tab background */
+.financial-nav .fs-link {
+    background: transparent !important; 
+    text-decoration: none !important;
+    border: none !important; 
+    color: #8a8a8a !important; 
+    transition: all 200ms ease-in-out;
+}
+
+/* Hover effect */
+.financial-nav .fs-link:hover {
+    color: #183b4e;
+    scale: 1.02;
+    transition: all 200ms ease-in-out;
+}
+
+/* Active tab */
+.financial-nav .fs-link.active {
+    color: #183b4e;
+    font-weight: 600 !important;
+    border-radius: 5px;
+}
+.income-header {
+    display: flex;
+    align-items: center;  
+    vertical-align: middle;
+    gap: 10px;             
+}
+.income-header h4 {
+    margin: 0;              
+    line-height: 1;        
+    display: flex;         
+    align-items: center;
+}
+
+.income-header button {
+    border: none; 
+    background: transparent !important;
+    padding: 5px;
+    margin-top: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;         
+    align-items: center;
+    justify-content: center;
+     transition: transform 0.2s ease;
+}
+
+.income-header button:hover {
+    transform: scale(1.3);
+}
+
+.incomeb4tax th{
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  text-transform: none !important;
+  background-color: white !important;
+  color: black !important;
+}
+.incomeafter th{
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  text-transform: none !important;
+  background-color: white !important;
+  color: black !important;
+}
+
+#income_table .right-column {
+  text-align: right !important;
+  white-space: nowrap;
+}
+#income_table .right-column-cash {
+  white-space: nowrap;
+  padding-left: 40px;
+  text-align: center;
+}
+#income_table .totals{
+  text-align: left !important;
+  white-space: nowrap;
+}
+.cf-head{
+    padding-left: 16px !important;
+}
+.indent_title{
+    padding-left: 50px !important;
+}
+.filling-row{
+    color: white !important;
+    background-color: white;
+}
+.line-total-exp{
+   display: inline-block;
+    border-bottom: 2px solid #6c757d;
+    text-align: right;
+    min-width: 90px;
+    position: relative;
+}
+.line-total-current{
+   display: inline-block;
+    border-bottom: 2px solid #6c757d;
+    text-align: right;
+    min-width: 100px;
+    position: relative;
+}
+.line-total-income,
+.line-total-tax {
+    border-bottom: 2px solid #6c757d;
+    text-align: left;
+    position: relative;
+    margin-right: 50px;
+}
+.line-total-assets {
+    border-bottom: 2px solid #6c757d;
+    position: relative;
+}
+.line-total-cashflow {
+    display: inline-block;
+    border-top: 2px solid #6c757d;
+    min-width: 100px;
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+}
+.double-underline {
+  position: relative;
+  padding-bottom: 7px;
+}
+
+.double-underline::after {
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  right: 0;
+  left: 0;
+  height: 2px;
+  background: #000;
+  transform: scaleY(0.5);
+}
+.double-underline::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0%;
+  height: 2px;
+  background: #000;
+  transform: scaleY(0.5);
+}
+
+.line-total-cf{
+  display: inline-block;
+    border-top: 2px solid #6c757d;
+    text-align: left;
+    min-width: 130px;
+    position: relative;
+}
+.line-total-cf::before{
+  content: "";
+    position: absolute;
+    top: 0;
+    left: -30%; 
+    width: 100%; 
+    border-top: 2px solid #6c757d;
+    transform: translateY(-100%);
+}
+
+/* .line-total-assets::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%; 
+    width: 100%; 
+    border-top: 2px solid #6c757d;
+    transform: translateY(-100%);
+} */
+.line-total-income::after,
+.line-total-tax::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -30%; 
+    width: 30%;
+    border-bottom: 2px solid #6c757d;
+    transform: translateY(100%);
+}
+/* STYLE FOR COMPLETED */
+.right-column{
+  padding-left: 150px !important;
+}
+.table{
+    width: 100%;
+    margin: auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+}
+#journal_table{
+    width: 100% !important;
+    font-size: 16px;
+}
+#journal_table th{
+     background-color: rgb(62, 97, 124) !important;
+  color: #f5eedc !important;
+    font-size: 16px;
+}
+.income-table, #cash-flow_table {
+  width: 100% !important;
+}
+.income-table th, 
+#cash-flow_table th {
+  width: 100% !important;
+  background-color: rgb(62, 97, 124) !important;
+  color: #f5eedc !important;
+  font-weight: 600 !important;
+}
+
+
+td{
+    padding-left: 35px !important;
+    padding-top: 4px !important ; 
+    padding-bottom: 4px !important; 
+    font-size: 13px !important;
+}
+
+.table th {
+    padding-top: 7px !important ; 
+    padding-bottom: 7px !important; 
+    font-size: 16px !important; 
+    background-color: rgb(62, 97, 124) !important;
+}
+/* 
+.credit-entry td {
+    background-color: rgba(128, 128, 128, 0.059);
+} */
+.credit-account{
+    padding-left: 80px !important;
+}
+.account-description{
+    font-size: 11px;
+    font-style: italic;
+    color: forestgreen !important;
+    
+}
+.print-only {
+    display: none;
+}
+.period{
+  gap: 0px;
+}
+.unofficial-fs{
+  font-size: 13px !important;
+  width: 100% !important;
+}
+
+#toolbar{
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom:#d1d0d0 solid 1px;
+}
+#dateRangeContainer .btn {
+    padding: 4px 12px;
+    font-size: 12px; 
+}
+input[type="date"] {
+    background-color: transparent !important;
+}
+.dataTables_info, .dataTables_paginate{
+    align-items: center;
+    margin-top: 12px !important;
+    margin-bottom: 20px !important;
+    font-size: 12px; 
+    color: #8a8a8a;  
+}
+.dataTables_length{
+    font-size: 12px !important;
+}
+.dataTables_length select{
+    height: 30px;
+    background-color: transparent;
+    width: auto;
+    display: inline-block;
+}
+.dataTables_filter input[type="search"] {
+    background: url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/icons/search.svg")
+                no-repeat 8px center;
+    padding-left: 32px;
+    height: 32px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+ .dataTables_info{
+    float: left;
+    font-size: 12px;
+}
+ .dataTables_paginate{
+    float: right;
+    font-size: 12px;
+}
+.dataTables_paginate .paginate_button {
+    font-size: 11px;    
+    line-height: 1.2;
+}
+#toolbar {
+    flex-wrap: nowrap !important;
+    width: 100%;
+    gap: 10px;
+}
+strong{
+    font-weight: bold;
+}
+@media (min-width: 577px) and (max-width: 992px){
+
+  .unofficial-fs{
+    font-size: 11px !important;
+    text-align: justify;
+    width: 100% !important;
+  }
+    .table-responsive {
+    overflow-x: auto !important;  /* enables scroll */
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    }
+
+  .table th{
+    font-size: 14px !important;
+  }
+  .table td{
+    font-size: 11px;
+  }
+  .btn{
+    font-size: 12px !important;
+    padding: 4px !important;
+  }
+  .dataTables_length label,
+    .dataTables_filter label {
+        font-size: 11px;
+    }
+
+    .dataTables_filter input[type="search"] {
+        font-size: 11px;
+        height: 30px !important;
+        padding-left: 28px;
+    }
+    .dataTables_length select{
+      height: 25px !important;
+      font-size: 11px;
+    }
+    .dataTables_paginate .paginate_button {
+        font-size: 9px !important;
+    }
+       #dateRangeContainerBalance .form-control,
+    #dateRangeContainerIncome .form-control,
+    #dateRangeContainerCashflow .form-control {
+        width: 100px !important;      
+        height: 30px !important;     
+        padding: 2px 4px !important;  
+        font-size: 12px !important;   /
+    }
+
+    #dateRangeContainerBalance button,
+    #dateRangeContainerIncome button,
+    #dateRangeContainerCashflow button {
+        font-size: 10px !important;  
+        line-height: 20px !important; 
+        padding: 4px !important;  
+        height: 30px !important; 
+    }
+    #dateRangeContainer .btn {
+    padding: 5px !important;
+    white-space: nowrap;
+    } 
+  
+  #dateRangeContainer .form-control{
+    height: 25px;
+  }
+    .blur-overlay-note {
+    position: absolute;
+    top: 30%;
+    left: 55%;
+    transform: translate(-40%, 70%);
+    background: rgba(255, 255, 255, 0.658);
+    padding: 8px 13px;
+    padding-top: 0;
+    border-radius: px;
+    text-align: center;
+    z-index: 999;
+    filter: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.568);
+}
+}
+
+@media (max-width: 576px) {
+
+    
+  .unofficial-fs{
+    font-size: 11px !important;
+    text-align: justify;
+    width: 100% !important;
+  }
+    .table-responsive {
+    overflow-x: auto !important;  /* enables scroll */
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    }
+ .main-content,
+  .container-fluid,
+  .card-body {
+    margin-left: 0 !important;       /* content full width */
+    width: 100%;
+    padding-left: 7px !important;
+    padding-top: 3px;
+  }
+  .table th{
+    font-size: 12px !important;
+  }
+  .table td{
+    font-size: 10px;
+  }
+  .btn{
+    font-size: 11px !important;
+    padding: 4px !important;
+  }
+  .dataTables_length label,
+    .dataTables_filter label {
+        font-size: 11px;
+    }
+
+    .dataTables_filter input[type="search"] {
+        font-size: 11px;
+        width: 150px !important;
+        height: 15px !important;
+        padding-left: 28px;
+    }
+    .dataTables_length select{
+      height: 15px !important;
+      font-size: 11px;
+    }
+    .dataTables_paginate .paginate_button {
+        font-size: 9px !important;
+    }
+    
+    #dateRangeContainer .btn {
+    padding: 3px !important;
+    white-space: nowrap;
+    } 
+    #dateRangeContainer .form-control{
+        height: 15px;
+    }
+      #dateRangeContainerBalance .form-control,
+    #dateRangeContainerIncome .form-control,
+    #dateRangeContainerCashflow .form-control {
+        width: 100px !important;      
+        height: 30px !important;     
+        padding: 2px 4px !important;  
+        font-size: 12px !important;   /
+    }
+
+    #dateRangeContainerBalance button,
+    #dateRangeContainerIncome button,
+    #dateRangeContainerCashflow button {
+        font-size: 10px !important;  
+        line-height: 10px !important; 
+        padding: 4px !important;  
+        height: 30px !important; 
+    }
+
+    #dateRangeContainer label{
+        font-size: 11px !important;
+        word-break: normal;
+    }
+     #dateRangeContainer {
+    flex-direction: column;      /* stack vertically */
+    align-items: flex-start;     /* left align */
+  }
+    #dateRangeContainer .form-group {
+    width: 100%;                 /* each group full width */
+    display: flex;
+    flex-direction: column;      /* label above input */
+    gap: 4px;
+  }
+
+  #dateRangeContainer .form-control {
+    width: 100%;                 /* inputs stretch */
+    max-width: 100%;
+  }
+    #dateRangeContainer .btn {
+    width: 100%;           
+     margin-top: 6px;  
+  }
+    .fsBtns{
+        white-space: nowrap;
+    }
+    .blur-overlay-note {
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    transform: translate(-40%, 70%);
+    background: rgba(255, 255, 255, 0.658);
+    padding: 8px 13px;
+    padding-top: 0;
+    border-radius: px;
+    text-align: center;
+    z-index: 999;
+    filter: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.568);
+}
+
+
+}

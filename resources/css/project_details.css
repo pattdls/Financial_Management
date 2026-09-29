@@ -1,0 +1,1077 @@
+
+/***** Project Stat & Project Phases Columns *****/
+.two-column-layout {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto;
+    padding-bottom: 25px;
+}
+
+.left-column {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.right-column {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+/* Calendar section spans both columns in the second row */
+.right-end-column {
+  grid-column: 1 / -1; /* span all columns */
+  grid-row: 2;
+}
+
+.card {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/***** Calendar Section Layout *****/
+.calendar-section {
+  display: flex;
+  gap: 2rem; /* space between calendar and legend */
+  align-items: flex-start; /* align top edges */
+  justify-content: flex-start;
+}
+
+/* Calendar container */
+.calendar-container {
+  max-width: 400px; /* reasonable max width for calendar */
+}
+
+/* Phase legend positioning */
+.phase-legend {
+  flex: 0 0 auto; /* don't grow or shrink */
+  min-width: 200px;
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+  margin-top: 1.5rem;
+}
+
+.phase-legend h6 {
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  color: #495057;
+}
+
+.phase-legend ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.phase-legend li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.legend-box {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  margin-right: 0.5rem;
+  flex-shrink: 0;
+}
+
+/* Phase color definitions */
+.modal-size {
+  max-width: 900px;
+  margin: 1.75rem auto;
+}
+/***** END *****/
+
+/* Update Phase Button */
+.update-icon {
+  cursor: pointer;
+  transition: stroke 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+.update-icon:hover {
+  stroke: #3d679ae8;   
+  transform: scale(1.1); 
+}
+
+
+.btn-outline-orange{
+    color: #dda853;
+    border: 1px solid #dda853;
+    background-color: transparent;
+    font-size: 14px;
+}
+.btn-outline-orange:hover,
+.btn-outline-orange:focus {
+    background-color: #dda853;
+    color: white;
+    border-color: #dda853;
+}
+/* Remove default background and border */
+.financial-nav .nav-item{
+    border-bottom: none; 
+    background: transparent; 
+    margin-right: 50px;
+    font-size: 16px;
+}
+
+/* Remove individual tab background */
+.financial-nav .nav-link {
+    background: transparent !important; 
+    border: none !important; 
+    color: #8a8a8a; 
+    transition: all 200ms ease-in-out;
+}
+
+/* Hover effect */
+.financial-nav .nav-link:hover {
+    color: #183b4e;
+    scale: 1.02;
+    transition: all 200ms ease-in-out;
+}
+
+/* Active tab */
+.financial-nav .nav-link.active {
+    color: #183b4e;
+    font-weight: 600 !important;
+    border-radius: 5px;
+}
+
+/* Project Status Card */
+.card {
+    width: 100%;
+    height: 100%;
+}
+
+/* Card Header (Left Column) */
+.card-header {
+    padding: 20px 20px;
+    background-color: #f8f9fa; /* Light gray background */
+    border-bottom: 1px solid #dee2e6; /* Border for separation */
+}
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #183b4e; /* Dark blue text */
+}
+
+/* Contract Details */
+.contract-file {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contract-link {
+    color: #0d6efd; /* Bootstrap primary */
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.contract-link:hover {
+    text-decoration: underline;
+}
+
+.contract-filename {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 220px; /* Adjust width as needed */
+    font-weight: 600; /* Bold filename */
+    font-size: 0.95rem; /* Custom font size */
+    color: #333; /* Custom filename color */
+}
+
+.contract-uploaded {
+    font-size: 0.75rem;
+    color: #6c757d; /* Bootstrap muted color */
+    margin-top: 2px;
+}
+
+.nav {
+    list-style: none; /* Removes bullets */
+    padding-left: 0; /* Removes default padding */
+}
+
+.nav-item {
+    display: inline-block;
+}
+
+.unofficial-fs{
+  font-size: 13px !important;
+  background-color: #e9ecef;
+  border: 1px solid #a9b4bec4;
+  border-radius: 8px;
+  padding: 5px;
+  width: 97%;
+  justify-content: center !important;
+  margin: 0 auto;
+}
+hr {
+    margin: 0; 
+    border: none; 
+    height: 2px; 
+    background-color: #ccc; 
+}
+.dataTables_length{
+    font-size: 12px !important;
+}
+.dataTables_length select{
+    height: 30px !important;
+    background-color: transparent;
+    width: auto;
+    display: inline-block;
+}
+
+/* View add on project contract */
+.custom-outline-btn {
+    font-size: 0.80rem; /* Customize font size */
+    color: #1f628e !important; /* Custom text color */
+    border-color: #1f628e !important; /* Custom border color */
+    padding: 5px 10px !important;  /* Adjust vertical (top/bottom) and horizontal (left/right) padding */
+}
+
+.custom-outline-btn:hover {
+    background-color: #1f628e !important;
+    color: white !important;
+}
+
+/* Table */
+#projectsTable {
+    border-collapse: collapse; /* no gaps */
+    border-radius: 10px;
+    overflow: hidden; /* keeps corners rounded */
+}
+
+#projectsTable.table-bordered,
+#projectsTable.table-bordered th,
+#projectsTable.table-bordered td {
+    border-color: #d0d0d0 !important;
+    padding: 15px;
+    
+}
+
+#projectsTable thead th {
+
+    background-color: #183b4e;
+    color: #F5F5F5;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+
+#projectsTable tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+table {
+    margin-left: 10px;
+    width: 100%;
+    border-spacing: 0 20px;
+    border-radius: 10px;
+  }
+
+  .table th, .table td {
+    padding: 15px;
+    font-size: 16px;
+    text-align: left;
+    vertical-align: middle;
+  }
+  
+  .table thead th{
+    background-color: #183b4e;
+    color: #F5F5F5;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+  }
+  
+.table tbody tr {
+    border-radius: 3px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.table a {
+    text-decoration: none;
+    color: #2a4a3d;
+    font-weight: bold;
+  }
+
+/* Style for the input field in the project details */
+.input-po {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* Overall Status and Project Phase */
+.progress-bar {
+  transition: width 0.5s ease-in-out;
+}
+
+.phase-select {
+  transition: background-color 0.3s ease;
+}
+
+.phase-select.pending {
+  background-color: #fff3cd;
+  border-color: #ffc107;
+  color: #856404;
+}
+
+.phase-select.in-progress {
+  background-color: #cce5ff;
+  border-color: #007bff;
+  color: #004085;
+}
+
+.phase-select.completed {
+  background-color: #d4edda;
+  border-color: #28a745;
+  color: #155724;
+}
+
+/* Project Status Labels */
+label {
+    font-size: 16px;
+}
+
+/* Project Status Badges */
+.badge-upcoming {
+    background-color: #e2e3e5; /* Light gray */
+    color: #383d41;            /* Dark text */
+    font-size: 14px;
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+
+.badge-ongoing {
+    background-color: #cfe2ff; /* Light blue */
+    color: #084298;
+    font-size: 14px;
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+
+.badge-overdue {
+    background-color: #f8d7da; /* Light red */
+    color: #842029;
+    font-size: 14px;
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+
+.badge-cancelled {
+    background-color: #ced4da; /* Grayish */
+    color: #212529;
+    font-size: 14px;
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+
+.badge-completed {
+    background-color: #d1f0d1; /* Light green */
+    color: #0f5132;
+    font-size: 14px;
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+
+/* Approval Status */
+.badge-user-approved {
+    background-color: #d1e7dd;  /* Light green */
+    color: #0f5132;             /* Dark green text */
+    font-size: 13px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.badge-user-pending {
+    background-color: #fff3cd;  /* Light yellow */
+    color: #664d03;             /* Dark yellow text */
+    font-size: 13px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+/* Complete Phase double validaiton */
+/* Modal container */
+.custom-modal-content {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon styling */
+.modal-icon-warning {
+    font-size: 70px;
+    color: #3c83f3; /* Bootstrap warning color */
+    margin-bottom: 30px;
+}
+
+/* Title text */
+.modal-title-text {
+    margin-top: -5px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Body description */
+.modal-description {
+    padding-top: 1rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer customization */
+.custom-modal-footer {
+    margin-top: 20px;
+    gap: 10px;
+}
+
+/* Optional: Button hover customizations */
+.custom-modal-footer .btn-success:hover {
+    background-color: #198754;
+}
+
+.custom-modal-footer .btn-secondary:hover {
+    background-color: #6c757d;
+}
+
+/* Cancel Button */
+.custom-btn-cancel {
+    background-color: #e9ecef; /* Light gray */
+    color: #495057; /* Darker text */
+    border: 1px solid #ced4da;
+    font-size: 14px;
+    padding: 6px 16px;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+}
+
+.custom-btn-cancel:hover {
+    background-color: #dee2e6;
+    color: #212529;
+    box-shadow: 0 0 0 2px #ced4da; /* Subtle glow effect */
+}
+/* Confirm Button */
+.custom-btn-confirm {
+    background-color: #3c83f3; /* Bootstrap success */
+    color: #fff;
+    border: 1px solid #3c83f3;
+    font-size: 14px;
+    padding: 6px 16px;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+}
+
+.custom-btn-confirm:hover {
+    background-color: #3c83f3;
+    border-color: #85b5fb;
+    box-shadow: 0 0 0 2px #85b5fb; /* adds a glow effect without shifting layout */
+    color: #fff;
+}
+
+/* Overall Status Bar */
+.custom-progress-bar {
+    background-color: #3c83f3 !important; /* Example: orange */
+}
+
+/* Calendar Status - Enhanced for Multiple Phase Indicators */
+.calendar-container {
+  height: auto;
+  width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(197, 197, 197, 0.4);
+  padding: 20px 20px;
+  font-size: 15px;
+}
+
+.calendar-week {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding-inline-start: 0px;
+}
+
+.calendar-week-day {
+  max-width: 57.1px;
+  width: 100%;
+  text-align: center;
+  color: #525659;
+}
+
+.calendar-days {
+  margin-top: 30px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding-inline-start: 0px;
+}
+
+/* Enhanced calendar day styling */
+.calendar-day {
+  text-align: center;
+  color: #525659;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 40px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.calendar-day:hover {
+  background-color: #f8f9fa;
+  border-radius: 5px;
+}
+
+.calendar-month-arrow-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.calendar-month-year-container {
+  padding: 10px 10px 20px 10px;
+  color: #525659;
+  cursor: pointer;
+}
+
+.calendar-arrow-container {
+  margin-top: -5px;
+}
+
+.calendar-left-arrow,
+.calendar-right-arrow {
+  height: 30px;
+  width: 30px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #525659;
+}
+
+.calendar-today-button {
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #525659;
+  padding: 5px 10px;
+  height: 30px;
+  margin-right: 10px;
+  background-color: #183b4e;
+  color: white;
+}
+
+.calendar-months,
+.calendar-years {
+  flex: 1;
+  border-radius: 10px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: #525659;
+  font-size: 15px;
+}
+
+.calendar-day-active {
+  background-color: #ec7625;
+  color: white;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+/* Multiple phase indicators container */
+.multiple-phases {
+    background: none !important; /* Remove single-phase background */
+}
+
+.phase-indicators {
+    display: flex;
+    gap: 2px;
+    margin-top: 3px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+}
+
+/* Individual phase dots */
+.phase-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Phase-specific dot colors matching your existing scheme */
+.phase-dot.phase-design {
+    background-color: #003f5c; /* Matching your design phase color */
+}
+
+.phase-dot.phase-procurement {
+    background-color: #004d40; /* Matching your procurement phase color */
+}
+
+.phase-dot.phase-siteprep {
+    background-color: #7f0000; /* Matching your site prep phase color */
+}
+
+.phase-dot.phase-installation {
+    background-color: #4b0082; /* Matching your installation phase color */
+}
+
+.phase-dot.phase-inspection {
+    background-color: #665c00; /* Matching your inspection phase color */
+}
+
+/* Alternative styling for multiple phases - subtle background pattern */
+.multiple-phases::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 2px,
+        rgba(0, 0, 0, 0.05) 2px,
+        rgba(0, 0, 0, 0.05) 4px
+    );
+    pointer-events: none;
+    border-radius: inherit;
+}
+
+/* Enhanced tooltip styling */
+.calendar-day[title] {
+    cursor: help;
+}
+
+/* Responsive adjustments for smaller screens */
+
+
+/* Calendar Project Legend - Updated */
+.legend-box {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    border-radius: 3px;
+    vertical-align: middle;
+}
+
+/* Completed Date text */
+.completed-date {
+    font-size: 14px;
+    color: #6c757d; /* Bootstrap secondary text color */
+}
+
+/* Animation for phase dots */
+.phase-dot {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Hover effects for better interactivity */
+.calendar-day:hover .phase-dot {
+    transform: scale(1.2);
+    transition: transform 0.2s ease;
+}
+
+/* Today indicator enhancement */
+.calendar-day-active {
+    font-weight: bold;
+    border: 2px solid #ec7625 !important;
+}
+
+.calendar-day-active.multiple-phases::before {
+    border: 2px solid #ec7625;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .phase-dot {
+        border-width: 2px;
+        border-color: #000;
+    }
+    
+    .calendar-day.phase-design,
+    .calendar-day.phase-procurement,
+    .calendar-day.phase-siteprep,
+    .calendar-day.phase-installation,
+    .calendar-day.phase-inspection {
+        border-width: 2px;
+    }
+}
+
+/* Single phase styling (keeping your existing colors) */
+.phase-design {
+    background-color: #a2d5f2;
+    color: #003f5c;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.phase-approval {
+    background-color: #ffe0ac;
+    color: #805300;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.phase-procurement {
+    background-color: #b5ead7;
+    color: #004d40;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.phase-siteprep {
+    background-color: #ffb7b2;
+    color: #7f0000;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.phase-installation {
+    background-color: #d0bdf4;
+    color: #4b0082;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.phase-inspection {
+    background-color: #f9f871;
+    color: #665c00;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.phase-default {
+    background-color: #dddddd;
+    color: #444;
+    border-radius: 5px;
+}
+
+/* Alternative styling for multiple phases - subtle background pattern */
+.multiple-phases::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 2px,
+        rgba(0, 0, 0, 0.05) 2px,
+        rgba(0, 0, 0, 0.05) 4px
+    );
+    pointer-events: none;
+    border-radius: inherit;
+}
+
+/* Enhanced tooltip styling */
+.calendar-day[title] {
+    cursor: help;
+}
+
+/* Legend styling enhancements */
+.legend-box {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: middle;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.legend-box.phase-design {
+    background-color: #ffc107;
+}
+
+.legend-box.phase-procurement {
+    background-color: #17a2b8;
+}
+
+.legend-box.phase-siteprep {
+    background-color: #28a745;
+}
+
+.legend-box.phase-installation {
+    background-color: #dc3545;
+}
+
+.legend-box.phase-inspection {
+    background-color: #6f42c1;
+}
+
+/* Today indicator enhancement */
+.calendar-day-active {
+    font-weight: bold;
+    border: 2px solid #007bff !important;
+    background-color: rgba(0, 123, 255, 0.1) !important;
+}
+
+.calendar-day-active.multiple-phases::before {
+    border: 2px solid #007bff;
+}
+
+/* Animation for phase dots */
+.phase-dot {
+    animation: fadeIn 0.3s ease-in-out;
+}
+/* Project Name for Card */
+.project-name {
+    font-size: 1.25rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Hover effects for better interactivity */
+.calendar-day:hover .phase-dot {
+    transform: scale(1.2);
+    transition: transform 0.2s ease;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .phase-dot {
+        border-width: 2px;
+        border-color: #000;
+    }
+    
+    .calendar-day.phase-design,
+    .calendar-day.phase-procurement,
+    .calendar-day.phase-siteprep,
+    .calendar-day.phase-installation,
+    .calendar-day.phase-inspection {
+        border-width: 2px;
+    }
+}
+
+/* MEDIA QUERIES */
+
+/* Extra small devices (phones, portrait) - up to 576px */
+@media (max-width: 576px) {
+  
+/***** Project Stat & Project Phases Columns *****/
+ .two-column-layout {
+      display: flex;
+      flex-direction: row; /* stack cards vertically */
+      gap: 15px; /* optional spacing between cards */
+      max-height: 100vh; /* fit viewport */
+      overflow-x: auto; /* make it scrollable */
+      padding-bottom: 25px;
+  }
+  .right-column {
+    order: 1; /* show first */
+    width: 100%;
+  }
+  .left-column {
+    order: 2; /* show second */
+    width: 100%;
+  }
+  
+/* Project Status Card */
+.card {
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+}
+/* Project Status Labels */
+label {
+    font-size: 0.875rem;
+}
+/* Phase Styles */
+.phase-items {
+    font-size: 16px;
+}
+/* Project Details Card */
+.project-name {
+    font-size: 1rem;
+}
+}
+
+/* Small devices (phones, landscape) - 577px to 767px */
+@media (min-width: 577px) and (max-width: 767px) {
+
+/***** Project Stat & Project Phases Columns *****/
+ .two-column-layout {
+      display: flex;
+      flex-direction: row; /* stack cards vertically */
+      gap: 15px; /* optional spacing between cards */
+      max-height: 100vh; /* fit viewport */
+      overflow-x: auto; /* make it scrollable */
+      padding-bottom: 25px;
+  }
+  .right-column {
+    order: 1; /* show first */
+    width: 100%;
+  }
+  .left-column {
+    order: 2; /* show second */
+    width: 100%;
+  }
+  
+/* Project Status Card */
+.card {
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+}
+/* Project Status Labels */
+label {
+    font-size: 0.875rem;
+}
+/* Phase Styles */
+.phase-items {
+    font-size: 16px;
+}
+/* Project Details Card */
+.project-name {
+    font-size: 1rem;
+}
+}
+/* Medium devices (tablets, portrait & small tablets landscape) - 768px to 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+
+/***** Project Stat & Project Phases Columns *****/
+ .two-column-layout {
+      display: flex;
+      flex-direction: row; /* stack cards vertically */
+      gap: 15px; /* optional spacing between cards */
+      max-height: 100vh; /* fit viewport */
+      overflow-x: auto; /* make it scrollable */
+      padding-bottom: 25px;
+  }
+ 
+  .right-column {
+    order: 1; /* show first */
+    width: 100%;
+  }
+
+  .left-column {
+    order: 2; /* show second */
+    width: 100%;
+  }
+/* Project Status Card */
+.card {
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+}
+/* Project Status Labels */
+label {
+    font-size: 0.875rem;
+}
+/* Phase Styles */
+.phase-items {
+    font-size: 16px;
+}
+/* Project Name for Card */
+.project-name {
+    font-size: 1rem;
+}
+}
+
+/* Large devices (desktops, small laptops) - 992px to 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+/* Project Status Card */
+.card {
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+}
+/* Project Status Labels */
+label {
+    font-size: 0.875rem;
+}
+/* Phase Styles */
+.phase-items {
+    font-size: 14px;
+}
+/* Project Name for Card */
+.project-name {
+    font-size: 1rem;
+}
+}
+
+/* Extra large devices (large desktops, wide screens) - 1200px to 1399px */
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+/* Project Status Card */
+.card {
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+}
+/* Project Status Labels */
+label {
+    font-size: 0.875rem;
+}
+/* Phase Styles */
+.phase-items {
+    font-size: 15px;
+}
+/* Project Name for Card */
+.project-name {
+    font-size: 1rem;
+}
+
+}
+
+/* For LAPTOP Screens */
+@media (max-width: 1400px){
+
+    /* Project Status Card */
+        .card {
+            width: 100%;
+            height: 100%;
+            font-size: 1rem;
+        }
+    
+        /* Project Status Labels */
+        label {
+            font-size: 0.875rem;
+        }
+}
+

@@ -1,0 +1,170 @@
+.add-user-button {
+    margin: 50px;
+}
+
+/* Custom Action Buttons */
+.btn-view {
+    background-color: #4C86A8; /* Custom blue */
+    color: #fff;
+    border: none;
+}
+.btn-view:hover {
+    background-color: #3B6B87;
+    color: #fff;
+}
+
+.btn-edit {
+    background-color: #F0A500; /* Custom yellow-orange */
+    color: #fff;
+    border: none;
+}
+.btn-edit:hover {
+    background-color: #d68c00;
+    color: #fff;
+}
+
+/* Confirm (Enable) Button */
+.btn-confirm {
+    background-color: #28a745; /* Green */
+    color: #fff;
+    border: none;
+}
+.btn-confirm:hover {
+    background-color: #218838;
+    color: #fff;
+}
+
+/* Disable Button */
+.btn-disable {
+    background-color: #E63946; /* Red */
+    color: #fff;
+    border: none;
+}
+.btn-disable:hover {
+    background-color: #c72e3b;
+    color: #fff;
+}
+
+/* Archive/Delete Button */
+.btn-archive {
+    background-color: #6c757d; /* Gray */
+    color: #fff;
+    border: none;
+}
+.btn-archive:hover {
+    background-color: #5a6268;
+    color: #fff;
+}
+
+.form-check {
+  font-size: 18px;
+}
+
+/* Base Alert Style */
+.alert {
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    font-size: 15px;
+    padding: 15px 15px 15px 50px;
+    margin-bottom: -12px;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: 15px center;
+}
+
+
+/* Table */
+.table {  
+    width: 100%;
+    margin: auto;
+    border-collapse: separate;   
+    border-spacing: 0;          
+    border-radius: 12px;         
+    overflow: hidden;            
+}
+ .table th, .table td {
+    padding: 8px;
+    font-size: 16px;
+    text-align: left;
+}
+.table thead th {
+    background-color: rgb(62, 97, 124) !important;
+    color: #F5F5F5;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    border-bottom: 1px solid #dee2e6; /* ← Ensure header border */
+}
+.table a {
+    text-decoration: none;
+    color: #2a4a3d;
+    font-weight: bold;
+  }
+/* DataTables wrapper spacing */
+.dataTables_wrapper {
+    margin-top: 40px !important;
+}
+
+/* Table styling with box shadow */
+.table,
+table.dataTable {
+    width: 100%;
+    margin: 20px auto 0 auto !important;
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    border: 1px solid #dee2e6 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Optional hover effect */
+.table:hover,
+table.dataTable:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* DataTables Styles*/
+.dataTables_info, .dataTables_paginate{
+    align-items: center;
+    margin-top: 12px !important;
+    margin-bottom: 20px !important;
+    font-size: 12px !important; 
+    color: #8a8a8a;  
+}
+.dataTables_length{
+    font-size: 12px !important;
+}
+.dataTables_length select{
+    height: 30px !important;
+    background-color: transparent;
+    width: auto;
+    display: inline-block;
+}
+.dataTables_filter input[type="search"] {
+    background: url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/icons/search.svg")
+                no-repeat 8px center;
+    padding-left: 32px !important;
+    height: 32px !important;
+    font-size: 12px !important;
+    border-radius: 4px !important;
+}
+
+
+@media (max-width: 1400px) {
+  
+/* Table */
+  .table th, .table td {
+    padding: 15px;
+    font-size: 14px;  
+  }
+  
+  .table thead th{
+    font-size: 16px;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,21 @@
+Array
+(
+    [client_type] => Individual
+    [client_name] => Patricia Delos Santos
+    [email] => Array
+        (
+            [0] => patriciadelossantos105@gmail.com
+        )
+
+    [phone_number] => Array
+        (
+            [0] => 09208813644
+        )
+
+    [province] => Batangas
+    [city] => Laurel
+    [barangay] => Buso-buso
+    [street_address] => Block 45 Lot 5 St. Martin
+    [zip_code] => 4027
+    [save_data] => 
+)

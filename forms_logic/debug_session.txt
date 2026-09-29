@@ -1,0 +1,442 @@
+Array
+(
+    [authenticated] => 1
+    [auth_user] => Array
+        (
+            [id] => 72
+            [name] => Patricia Delos Santos
+            [email] => pattyyydls@gmail.com
+            [role] => finance
+            [client_id] => 
+            [company_id] => 1
+        )
+
+    [selected_project_id] => 105
+)
+Array
+(
+    [authenticated] => 1
+    [auth_user] => Array
+        (
+            [id] => 72
+            [name] => Patricia Delos Santos
+            [email] => pattyyydls@gmail.com
+            [role] => finance
+            [client_id] => 
+            [company_id] => 1
+        )
+
+    [selected_project_id] => 105
+)
+Array
+(
+    [authenticated] => 1
+    [auth_user] => Array
+        (
+            [id] => 73
+            [name] => Patricia F. Delos Santos
+            [email] => patriciadelossantos105@gmail.com
+            [role] => user
+            [client_id] => 172
+            [company_id] => 1
+        )
+
+)
+Array
+(
+    [authenticated] => 1
+    [auth_user] => Array
+        (
+            [id] => 57
+            [name] => RVR ADMIN
+            [email] => rvr_admin@gmail.com
+            [role] => admin
+            [client_id] => 
+            [company_id] => 1
+        )
+
+    [selected_project_id] => 132
+    [company_data] => Array
+        (
+            [id] => 1
+            [company_name] => RVR Squared Mechanical Engineering Services
+            [business_reg_num] => 11-M1115-12345
+            [industry] => Construction
+            [company_size] => 11-50
+            [company_address] => Block 45 Lot 5 St. Martin
+            [phone_number] => 091234534123
+            [email] => rvr@gmail.com
+            [company_image] => ../Uploads/company_images/company_1_1751614189.jpeg
+        )
+
+)
+Array
+(
+    [authenticated] => 1
+    [auth_user] => Array
+        (
+            [id] => 57
+            [name] => RVR ADMIN
+            [email] => rvr_admin@gmail.com
+            [role] => admin
+            [client_id] => 
+            [company_id] => 1
+        )
+
+    [last_activity] => 1756194432
+)
+Array
+(
+    [authenticated] => 1
+    [auth_user] => Array
+        (
+            [id] => 57
+            [name] => RVR ADMIN
+            [email] => rvr_admin@gmail.com
+            [role] => admin
+            [client_id] => 
+            [company_id] => 1
+        )
+
+    [last_activity] => 1756194691
+)
+Array
+(
+    [authenticated] => 1
+    [auth_user] => Array
+        (
+            [id] => 57
+            [name] => RVR ADMIN
+            [email] => rvr_admin@gmail.com
+            [role] => admin
+            [client_id] => 
+            [company_id] => 1
+        )
+
+    [last_activity] => 1756194734
+)
+Array
+(
+    [authenticated] => 1
+    [auth_user] => Array
+        (
+            [id] => 57
+            [name] => RVR ADMIN
+            [email] => rvr_admin@gmail.com
+            [role] => admin
+            [client_id] => 
+            [company_id] => 1
+        )
+
+    [last_activity] => 1756329728
+    [company_data] => Array
+        (
+            [id] => 1
+            [company_name] => RVR Squared Mechanical Engineering Services
+            [business_reg_num] => 11-M1115-12345
+            [industry] => Construction
+            [company_size] => 11-50
+            [company_address] => Block 45 Lot 5 St. Martin
+            [phone_number] => 091234534123
+            [email] => rvr@gmail.com
+            [company_image] => ../Uploads/company_images/company_1_1751614189.jpeg
+        )
+
+)
+Array
+(
+    [authenticated] => 1
+    [auth_user] => Array
+        (
+            [id] => 57
+            [name] => RVR ADMIN
+            [email] => rvr_admin@gmail.com
+            [role] => admin
+            [client_id] => 
+            [company_id] => 1
+        )
+
+    [last_activity] => 1756329745
+    [company_data] => Array
+        (
+            [id] => 1
+            [company_name] => RVR Squared Mechanical Engineering Services
+            [business_reg_num] => 11-M1115-12345
+            [industry] => Construction
+            [company_size] => 11-50
+            [company_address] => Block 45 Lot 5 St. Martin
+            [phone_number] => 091234534123
+            [email] => rvr@gmail.com
+            [company_image] => ../Uploads/company_images/company_1_1751614189.jpeg
+        )
+
+)
+Array
+(
+    [authenticated] => 1
+    [auth_user] => Array
+        (
+            [id] => 57
+            [name] => RVR ADMIN
+            [email] => rvr_admin@gmail.com
+            [role] => admin
+            [client_id] => 
+            [company_id] => 1
+        )
+
+    [last_activity] => 1757947997
+)
+Array
+(
+    [authenticated] => 1
+    [auth_user] => Array
+        (
+            [id] => 119
+            [name] => Kamila Kabelow Camposaint
+            [email] => schoolcamposanto05@gmail.com
+            [role] => admin
+            [client_id] => 
+            [company_id] => 1
+        )
+
+    [last_activity] => 1757956596
+)
+Array
+(
+    [authenticated] => 1
+    [auth_user] => Array
+        (
+            [id] => 57
+            [name] => RVR ADMIN
+            [email] => rvr_admin@gmail.com
+            [role] => admin
+            [client_id] => 
+            [company_id] => 1
+        )
+
+    [last_activity] => 1757986866
+    [last_viewed_recording] => 2025-09-15 16:42:10
+)
+Array
+(
+    [authenticated] => 1
+    [auth_user] => Array
+        (
+            [id] => 119
+            [name] => Kamila Kabelow Camposaint
+            [email] => schoolcamposanto05@gmail.com
+            [role] => admin
+            [client_id] => 
+            [company_id] => 1
+        )
+
+    [last_activity] => 1758002225
+)
+Array
+(
+    [authenticated] => 1
+    [auth_user] => Array
+        (
+            [id] => 57
+            [name] => RVR ADMIN
+            [email] => rvr_admin@gmail.com
+            [role] => admin
+            [client_id] => 
+            [company_id] => 1
+        )
+
+    [last_activity] => 1758010796
+)
+Array
+(
+    [authenticated] => 1
+    [auth_user] => Array
+        (
+            [id] => 137
+            [name] => Patty Frago
+            [email] => pattyyydls@gmail.com
+            [role] => finance
+            [client_id] => 
+            [company_id] => 1
+        )
+
+    [last_activity] => 1758043985
+)
+Array
+(
+    [authenticated] => 1
+    [auth_user] => Array
+        (
+            [id] => 141
+            [name] => Cedrico Sollosa
+            [email] => sollosaken@gmail.com
+            [role] => user
+            [client_id] => 2
+            [company_id] => 1
+        )
+
+    [last_activity] => 1758125399
+)
+Array
+(
+    [authenticated] => 1
+    [auth_user] => Array
+        (
+            [id] => 151
+            [name] => PDLS Productions
+            [email] => patriciadelossantos105@gmail.com
+            [role] => user
+            [client_id] => 6
+            [company_id] => 1
+        )
+
+    [last_activity] => 1759242807
+)
+Array
+(
+    [authenticated] => 1
+    [auth_user] => Array
+        (
+            [id] => 57
+            [name] => RVR ADMIN
+            [email] => rvr_admin@gmail.com
+            [role] => admin
+            [client_id] => 
+            [company_id] => 1
+        )
+
+    [last_activity] => 1760753770
+)
+Array
+(
+    [authenticated] => 1
+    [auth_user] => Array
+        (
+            [id] => 57
+            [name] => RVR ADMIN
+            [email] => rvr_admin@gmail.com
+            [role] => admin
+            [client_id] => 
+            [company_id] => 1
+        )
+
+    [last_activity] => 1760753866
+)
+Array
+(
+    [authenticated] => 1
+    [auth_user] => Array
+        (
+            [id] => 57
+            [name] => RVR ADMIN
+            [email] => rvr_admin@gmail.com
+            [role] => admin
+            [client_id] => 
+            [company_id] => 1
+        )
+
+    [last_activity] => 1761369499
+    [selected_project_id] => 3
+)
+Array
+(
+    [authenticated] => 1
+    [auth_user] => Array
+        (
+            [id] => 155
+            [name] => Patty dlss
+            [email] => pattyyydls@gmail.com
+            [role] => finance
+            [client_id] => 
+            [company_id] => 1
+        )
+
+    [last_activity] => 1761845841
+    [last_viewed_recording] => 2025-10-31 00:12:50
+    [last_viewed_archive] => 2025-10-30 20:52:43
+    [last_viewed_sessions] => 2025-10-31 01:37:18
+    [last_viewed_fsAccess] => 2025-10-30 22:57:17
+    [initialized_0] => 1
+)
+Array
+(
+    [authenticated] => 1
+    [auth_user] => Array
+        (
+            [id] => 168
+            [name] => Jeus Cedric Manalili
+            [email] => jeuscedricmanalili@gmail.com
+            [role] => finance
+            [client_id] => 
+            [company_id] => 1
+        )
+
+    [last_activity] => 1763206616
+    [last_viewed_recording] => 2025-11-15 19:11:14
+    [last_viewed_archive] => 2025-11-15 19:36:43
+    [last_viewed_sessions] => 2025-11-15 19:36:41
+    [last_viewed_fsAccess] => 2025-11-15 19:36:43
+    [initialized_0] => 1
+)
+Array
+(
+    [authenticated] => 1
+    [auth_user] => Array
+        (
+            [id] => 57
+            [name] => RVR ADMIN
+            [email] => rvr_admin@gmail.com
+            [role] => admin
+            [client_id] => 
+            [company_id] => 1
+        )
+
+    [last_activity] => 1763507584
+    [last_viewed_recording] => 2025-11-18 06:44:42
+    [last_viewed_archive] => 2025-11-18 12:53:11
+    [last_viewed_sessions] => 2025-11-19 06:58:16
+    [last_viewed_fsAccess] => 2025-11-18 12:43:31
+    [initialized_0] => 1
+)
+Array
+(
+    [authenticated] => 1
+    [auth_user] => Array
+        (
+            [id] => 57
+            [name] => RVR ADMIN
+            [email] => rvr_admin@gmail.com
+            [role] => admin
+            [client_id] => 
+            [company_id] => 1
+        )
+
+    [last_activity] => 1789712131
+    [last_viewed_recording] => 2025-11-25 10:33:33
+    [last_viewed_archive] => 2025-11-19 09:22:11
+    [last_viewed_sessions] => 2026-09-18 12:24:38
+    [last_viewed_fsAccess] => 2025-12-03 12:00:03
+    [initialized_0] => 1
+    [selected_project_id] => 19
+)
+Array
+(
+    [authenticated] => 1
+    [auth_user] => Array
+        (
+            [id] => 57
+            [name] => RVR ADMIN
+            [email] => rvr_admin@gmail.com
+            [role] => admin
+            [client_id] => 
+            [company_id] => 1
+        )
+
+    [last_activity] => 1790693649
+    [last_viewed_recording] => 2026-05-13 14:30:59
+    [last_viewed_archive] => 2026-05-13 14:29:56
+    [last_viewed_sessions] => 2026-09-29 22:30:28
+    [last_viewed_fsAccess] => 2026-08-28 10:18:52
+    [initialized_0] => 1
+    [selected_project_id] => 11
+)

@@ -1,0 +1,265 @@
+.print-only {
+    display: none;
+}
+.limit-btn {  
+    background-color: #212529;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px !important;
+    transition: 0.3s ease;
+    border: 2px solid transparent;
+    margin-top: 0;
+  }
+  
+.limit-btn:hover {
+    background-color: #4F8A10;
+    border: 2px solid transparent;
+  }
+.income-header button {
+    border: none; 
+    background: transparent !important;
+    padding: 5px;
+    margin-top: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;         
+    align-items: center;
+    justify-content: center;
+     transition: transform 0.2s ease;
+}
+
+.income-header button:hover {
+    transform: scale(1.3);
+}
+.income-header {
+    display: flex;
+    align-items: center;  
+    vertical-align: middle;
+    gap: 10px;             
+}
+
+.unofficial-fs{
+  font-size: 16px;
+  background-color: #e9ecef;
+  border: 1px solid #a9b4bec4;
+  border-radius: 8px;
+  text-align: justify;
+  padding: 5px;
+  width: 97%;
+  justify-content: center !important;
+  margin: 0 auto;
+}
+.table {
+    width: 100% !important;
+    border-collapse: collapse;
+    border-spacing: 0 15px;
+    border-radius: 10px !important;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adds shadow effect */
+  }
+
+ .table td {
+    padding: 5px;
+    padding-left: 18px;
+    text-align: left;
+    vertical-align: middle; 
+    font-size: 13px;
+  }
+  
+  .table thead th{
+    background-color: #183b4e;
+    color: #f5eedc;
+    font-size: 16px;
+    font-weight: 750;
+    padding: 8px;
+    letter-spacing: 0.03em;
+    text-align: center !important;
+    
+  }
+/* NEWLY ADDED CSS FOR PRINT VIEW: */
+@media print {
+    /* Remove default margins for printing */
+    @page {
+      margin: 0;
+    }
+    
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+  
+    /* Hide everything except the print area */
+    body * {
+      visibility: hidden;
+    }
+    .export, input[type="text"]{
+      display: none;
+    }
+    .print-only {
+        display: block !important;
+      }
+    #balanceSheetPrint, #balanceSheetPrint * {
+      visibility: visible;
+    }
+  
+    /* Make the print area take up the whole page */
+    #balanceSheetPrint {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 40px;
+      box-sizing: border-box;
+    }
+  
+    /* Force the table to be full width */
+    #balanceSheetPrint table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+      padding: 5px;
+    }
+    #balanceSheetPrint td {
+        font-size: 12px;
+        border: none;
+    }
+    #balanceSheetPrint th {
+        padding: 8px;
+        border-top: 1px solid #000;  /* Keep top border */
+        border-bottom: 1px solid #000;  /* Keep bottom border */
+        border-left: none;  /* Remove left border */
+        border-right: none;  /* Remove right border */
+        text-align: left;
+        width: 50%;
+        font-size: 12px;
+    }
+    #balanceSheetPrint .expense-note{
+        font-size: 10px;
+    }
+    #balanceSheetPrint th.right-column, td.right-column {
+        width: 100%;
+        text-align: left;
+    }
+    #balanceSheetPrint th.totals, #balanceSheetPrint th.right-column.totals{
+        border: none;
+        color: #065535;
+    }
+  }
+
+/* This style will be applied to the downloaded PDF */
+
+
+  /* Hide everything except the print area */
+.pdf-export-mode body * {
+    visibility: hidden;
+  }
+  .pdf-export-mode .print-only {
+      display: block !important;
+    }
+    .pdf-export-mode #balanceSheetPrint, #balanceSheetPrint * {
+    visibility: visible;
+  }
+
+  /* Make the print area take up the whole page */
+  .pdf-export-mode #balanceSheetPrint {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;      
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  /* Force the table to be full width */
+  .pdf-export-mode #balanceSheetPrint table {
+    width: auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+    padding: 5px;
+  }
+  .pdf-export-mode #balanceSheetPrint td {
+      font-size: 8px;
+      border: none;
+  }
+  .pdf-export-mode #balanceSheetPrint th {
+      padding: 8px;
+      border-top: 1px solid #000;  /* Keep top border */
+      border-bottom: 1px solid #000;  /* Keep bottom border */
+      border-left: none;  /* Remove left border */
+      border-right: none;  /* Remove right border */
+      text-align: left;
+      width: auto;
+      font-size: 8px;
+  }
+  .pdf-export-mode #balanceSheetPrint .expense-note{
+      font-size: 5px;
+  }
+  .pdf-export-mode #balanceSheetPrint th.right-column, td.right-column {
+      width: auto;
+      text-align: left;
+  }
+  .pdf-export-mode #balanceSheetPrint th.totals, #balanceSheetPrint th.right-column.totals{
+      border: none;
+      color: #065535;
+  }
+  .modal-backdrop.show {
+  z-index: 1055 !important;
+}
+.modal.show {
+  z-index: 1060 !important;
+}
+.modal.show[data-bs-target] {
+  z-index: 1070 !important; /* ensure new modal stacks higher */
+}
+strong{
+  font-weight: bold;
+}
+
+@media (min-width: 577px) and (max-width: 992px){
+
+  .unofficial-fs{
+    font-size: 11px !important;
+    text-align: justify;
+  }
+
+  .table th{
+    font-size: 14px !important;
+  }
+  .table td{
+    font-size: 11px !important;
+  }
+  .btn{
+    padding: 3px !important;
+  }
+  .addonsHeader{
+    font-size: 16px !important;
+  }
+  .btn-outline-orange{
+    white-space: nowrap;
+  }
+  .dataTables_length label,
+    .dataTables_filter label {
+        font-size: 11px;
+    }
+
+    .dataTables_filter input[type="search"] {
+        font-size: 11px;
+        height: 30px !important;
+        padding-left: 28px;
+        width: 140px;
+    }
+    .dataTables_length select{
+      height: 25px !important;
+      font-size: 11px;
+    }
+    .dataTables_paginate .paginate_button {
+        font-size: 9px !important;
+    }
+     #dateRangeContainer .form-select{
+        width: 100px !important;
+    }
+
+}

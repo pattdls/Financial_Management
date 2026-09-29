@@ -1,0 +1,1434 @@
+/* Empty Project State */
+.welcome-screen {
+  margin-top: 20px;
+}
+.proj-empty-svg{
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+.add-first-proj-title {
+  font-size: 28px;
+  font-weight: bold;
+}
+.first-proj-desc {
+  font-size: 16px;
+}
+.add-first-proj-btn {
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.add-first-proj-btn:hover {
+    transform: translateY(-2px); /* subtle lift */
+}
+.add-first-proj-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.25rem rgba(24, 59, 78, 0.4);
+}
+
+/* Make sure labels are visible and properly positioned */
+.form-label:not(.text-muted) {
+    color: #212529 !important;
+    font-size: 0.875rem;
+}
+.text-muted {
+  font-size: 0.875rem;
+}
+
+/* Start Date and End Date */
+#start_date,
+#end_date {
+    width: 300px; /* Adjust to your preferred size */
+}
+
+
+/* Add Project Modal */
+.project-modal-header {
+  font-size: 15px;
+}
+
+/* Add Project Button */
+.add-custom-outline-btn {
+    background-color: #e39219;
+    color: #ffffff;
+    border: 1px solid #e39219;
+    font-weight: 500;
+    font-size: 0.95rem;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease-in-out;
+    margin-top: 5px;
+}
+.add-custom-outline-btn:hover {
+    background-color:#d18317;
+    color: #ffffff;
+    transform: translateY(-2px); /* subtle lift */
+}
+.add-custom-outline-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.25rem rgba(24, 59, 78, 0.4);
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-2px); }
+  40% { transform: translateX(2px); }
+  60% { transform: translateX(-2px); }
+  80% { transform: translateX(2px); }
+  100% { transform: translateX(0); }
+}
+
+.shake {
+  animation: shake 0.3s ease;
+}
+
+.custom-modal-position {
+  position: relative;
+  top: 10%; /* Adjust this to move modal up or down */
+  margin: auto;
+  max-width: 500px;
+  width: 100%;
+  font-size: 18px;
+}
+
+.add-project-btn:hover {
+    transform: scale(1.03);
+}
+
+/* SVG user icon */
+.custom-client-badge {
+  display: inline-flex;           
+  align-items: center;          
+  margin-bottom: 1rem;           
+  margin-top: 1.5rem;             
+  padding: 0.35em 0.65em;       
+  font-size: 0.75em;            
+  font-weight: 700;            
+  line-height: 1;                 
+  color: #fff;                    
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.375rem;         
+  background-color: #0d6efd;      
+}
+.custom-client-badge svg {
+  vertical-align: middle;
+  margin-right: 6px;
+  width: 40px;
+  height: 40px;
+}
+
+/* Base Alert Style */
+.alert {
+    margin-top: 10px;
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    font-size: 15px;
+    padding: 15px 15px 15px 50px;
+    line-height: 1.5;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: 15px center;
+}
+
+/* Danger Alert */
+.alert-danger {
+    border-color: #f5c16c;
+    color: #9F6000;
+    background-color: #FEEFB3;
+    background-image: url('https://i.imgur.com/Z8q7ww7.png');
+}
+
+/* Success Alert */
+.alert-success {
+    border-color: #8BC34A;
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    background-image: url('https://i.imgur.com/Q9BGTuy.png');
+}
+
+/* Error Alert */
+.alert-error {
+    border-color: #e57373;
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url('https://i.imgur.com/GnyDvKN.png');
+}
+
+/* Make strong text stand out */
+.alert strong {
+    font-weight: 600;
+    color: inherit;
+}
+
+/* Allow multiline messages */
+.alert span,
+.alert div,
+.alert p {
+    display: block;
+    margin: 3px 0;
+}
+
+/* Client Name */
+.custom-client-badge {
+    background-color: #e9f2fa;
+    color: #1f628e;
+    font-size: 1.5rem;
+    padding: 4px 12px;
+    border-radius: 10px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Status badges */
+.badge-pending {
+    background-color: #ffe58f;
+    color: #664d03;
+    font-size: 13px;
+}
+
+.badge-completed {
+    background-color: #c5c6ca;
+    color: #1f1f1f;
+        font-size: 13px;
+}
+
+.badge-overdue {
+    background-color: #ffcccc;
+    color: #a00000;
+    font-size: 13px;
+}
+
+.badge-ongoing {
+    background-color: #e0f7ff;
+    color: #004085;
+    font-size: 13px;
+}
+
+.badge-upcoming {
+   background-color: #e2e3e5;  
+    color: #383d41;           
+    font-size: 13px;
+}
+
+/* Approval (Contract) badges */
+.badge-approved {
+    background-color: #d1f0d1;
+    color: #0f5132;
+    font-size: 13px;
+}
+
+.badge-pending-approval {
+    background-color: #ffe58f;
+    color: #664d03;
+    font-size: 13px;
+}
+
+/* Actions badges */
+.btn-confirm {
+    background-color: #28a745; /* custom green */
+    color: white;
+    font-size: 13px;
+}
+.btn-confirm:hover {
+    background-color: #218838;
+    color: white;
+}
+
+.btn-edit {
+    background-color: #f0ad4e; /* custom yellow-orange */
+    color: white;
+    font-size: 13px;
+}
+.btn-edit:hover {
+    background-color: #ec971f;
+    color: white;
+}
+
+.btn-addon {
+    background-color: #17a2b8; /* teal */
+    color: white;
+    font-size: 13px;
+}
+.btn-addon:hover {
+    background-color: #138496;
+    color: white;
+}
+
+.btn-archive {
+    background-color: #6c757d; /* custom gray */
+    color: white;
+}
+.btn-archive:hover {
+    background-color: #5a6268;
+    color: white;
+}
+.custom-outline-btn:hover {
+    background-color: #1f628e !important;
+    color: white !important;
+}
+/* Enhanced Projects Table Styling */
+.clickable-row {
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-left: 3px solid transparent;
+}
+
+.clickable-row:hover {
+    background-color: #f8f9fa !important;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-left: 3px solid #1f628e;
+}
+
+.clickable-row:active {
+    transform: translateY(0);
+}
+
+/* Project Name Cell Styling */
+.project-name-cell {
+    position: relative;
+}
+.project-info {
+    display: flex;
+    flex-direction: column;
+}
+.project-title {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 1rem;
+}
+
+.project-budget {
+    color: #6c757d;
+    font-size: 0.875rem;
+}
+
+.project-addon-badge {
+    margin-top: 0.25rem;
+}
+
+.click-hint-project {
+    font-size: 11px;
+    color: #3d679ae8 ;
+    font-weight: 500;
+    margin-top: 0.25rem;
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+
+/* Arrow indicator for project name */
+.project-name-cell:after {
+    /*content: '→';*/
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all 0.2s ease;
+    color: #3d679ae8 ;
+    font-weight: bold;
+}
+
+.clickable-row:hover .project-name-cell:after {
+    opacity: 1;
+    right: 5px;
+}
+
+/* P.O Number Cell */
+.po-number {
+    font-weight: 600;
+    color: #495057;
+}
+
+/* Status Badges */
+.status-badge {
+    padding: 0.35rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
+.badge-pending {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.badge-completed {
+    background-color: #d1edff;
+    color: #0c63e4;
+}
+
+.badge-overdue {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.badge-ongoing {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+.badge-upcoming {
+    background-color: #e2e3e5;
+    color: #495057;
+}
+
+.completion-date {
+    font-size: 0.75rem;
+    color: #6c757d;
+    margin-top: 0.25rem;
+}
+
+/* Approval Badges */
+.approval-badge {
+    padding: 0.35rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.badge-approved {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.badge-pending-approval {
+    background-color: #ffeaa7;
+    color: #6c5000;
+}
+
+/* Action Buttons */
+.action-buttons {
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+.clickable-row:hover .action-buttons {
+    opacity: 1;
+}
+
+/* Button Styling */
+.btn-confirm {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+
+.btn-confirm:hover {
+    background-color: #218838;
+    color: white;
+}
+
+.btn-edit {
+    background-color: #ffc107;
+    color: #212529;
+    border: none;
+}
+
+.btn-edit:hover {
+    background-color: #e0a800;
+    color: #212529;
+}
+
+.btn-addon {
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+}
+
+.btn-addon:hover {
+    background-color: #138496;
+    color: white;
+}
+
+.btn-archive {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+}
+
+.btn-archive:hover {
+    background-color: #5a6268;
+    color: white;
+}
+/* Table hover enhancement */
+.table-hover tbody tr:hover {
+    background-color: transparent; /* Let our custom hover take precedence */
+}
+
+/* Enhanced table styling */
+#projectsTable {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+#projectsTable thead th {
+    background-color: #3e617c;
+    color: #F5F5F5;
+    border: none;
+    padding: 15px;
+    font-weight: 600;
+}
+
+#projectsTable tbody td {
+    border-bottom: 1px solid #dee2e6;
+    padding: 12px 15px;
+    vertical-align: middle;
+}
+/* Table */
+.table {  
+    width: 100%;
+    border-collapse: separate;   
+    border-spacing: 0;          
+    border-radius: 12px;         
+    overflow: hidden;            
+}
+ .table th, .table td {
+    padding: 8px;
+    font-size: 16px;
+    text-align: left;
+}
+.table thead th {
+    background-color: rgb(62, 97, 124) !important;
+    color: #F5F5F5;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    border-bottom: 1px solid #dee2e6; /* ← Ensure header border */
+}
+.table a {
+    text-decoration: none;
+    color: #2a4a3d;
+    font-weight: bold;
+  }
+
+
+/* Table styling with box shadow */
+.table,
+table.dataTable {
+    width: 100%;
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    border: 1px solid #dee2e6 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+    transition: box-shadow 0.3s ease;
+}
+/* Loading Modal 
+#loadingModal {
+background: rgba(154, 146, 146, 0.31);
+backdrop-filter: blur(3.8px);
+-webkit-backdrop-filter: blur(3.8px);
+}
+#loadingModal .modal-content {
+  background-color: #fff;
+  border-radius: 10px;
+}
+#loadingModal .spinner-border {
+    color: #183b4e; 
+}
+#loadingModal .modal-body {
+    padding: 2rem;
+} */
+
+h5{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #252525;
+}
+
+p, label{
+  font-size: 1rem;
+}
+
+.hover-effect {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-effect:hover {
+  border-color:darkgrey;
+  box-shadow: 0 0 5px rgba(169, 169, 169, 0.5); /* Dark gray color */
+}
+
+/* .flatpickr-current-month .numInputWrapper {
+  display: none !important;
+} */
+
+/* Align and space the info text */
+.dataTables_info, .dataTables_paginate{
+    align-items: center;
+    margin-top: 12px !important;
+    margin-bottom: 20px !important;
+    font-size: 12px !important; 
+    color: #8a8a8a;  
+}
+.dataTables_length{
+    font-size: 10px !important;
+}
+.dataTables_length label {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+.dataTables_length select{
+    height: 30px !important;
+    background-color: transparent;
+    width: auto;
+    display: inline-block;
+}
+.dataTables_filter input[type="search"] {
+    background: url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/icons/search.svg")
+                no-repeat 8px center;
+    padding-left: 32px !important;
+    height: 32px !important;
+    font-size: 12px !important;
+    border-radius: 4px !important;
+}
+
+/* Upload Area */
+.upload-area {
+  width: 100%;
+  max-width: 25rem;
+  background-color: var(--clr-white);
+  box-shadow: 0 10px 60px rgb(218, 229, 255);
+  border: 2px solid var(--clr-light-blue);
+  border-radius: 24px;
+  padding: 2rem 1.875rem 5rem 1.875rem;
+  margin: 0.625rem;
+  text-align: center;
+}
+
+/***** MEDIA QUERIES *****/
+
+/* Extra small devices (phones, portrait) - up to 576px */
+@media (max-width: 576px) {
+  
+/* Add Project Button */
+.add-custom-outline-btn {
+  padding: 5px 12px;
+  font-size: 14px;
+  margin-top: 0 !important; 
+  white-space: nowrap; 
+}
+/* Style the input field with a search icon */
+  .dataTables_filter {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: center;
+    justify-content: flex-end; /* search stays right, button stays left of it */
+    gap: 10px;
+  }
+.dataTables_filter input {
+    min-width: 180px;
+    flex: 1;
+  }
+/* Container spacing */
+.dataTables_length {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+  }
+/* Adjust spacing and height of the select dropdown */
+.dataTables_length label {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-size: 0;
+    gap: 0.25rem;
+  }
+/* Show entries */
+.dataTables_length select {
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+    font-size: 0.9rem;
+  }
+/* Align and space the info text */
+.dataTables_info {
+    font-size: 0.875rem; /* Slightly smaller text */
+    color: #6c757d;       /* Bootstrap's muted text color */
+  }
+/* Optional: if you want to center or adjust position */
+.dataTables_wrapper .dataTables_info {
+    display: flex;
+    align-items: center;
+    justify-content: start; /* or center / end depending on layout */
+  }
+/* Put pagination and info on the same row */
+.dataTables_wrapper .row:last-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+/* General pagination wrapper */
+.dataTables_wrapper .dataTables_paginate {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: end; /* Center the pagination */
+  align-items: center;
+}
+/* Pagination buttons */
+table.dataTable thead .sorting:after {
+  content: "\f0dc"; /* Font Awesome icon code for sort */
+  font-weight: 900;
+  color: #bf2323;
+  padding-left: 5px;
+  font-size: 0.8rem; /* Adjusted for better readability */
+}
+table.dataTable thead .sorting_asc:after {
+  content: "\f0de"; /* Sort up */
+}
+table.dataTable thead .sorting_desc:after {
+  content: "\f0dd"; /* Sort down */
+}
+
+/* Main Contact Person */
+.main-contact {
+    font-size: 0.875rem;
+}
+
+/* Table */
+.table-responsive {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    border: #004085;
+}
+  .table th, .table td {
+    font-size: 11px;
+  }
+  
+  .table thead th{
+    font-size: 11px;
+  }
+
+/* Status badges */
+.badge-pending {
+    font-size: 10px;
+}
+
+.badge-completed {
+    font-size: 10px;
+}
+
+.badge-overdue {
+    font-size: 10px;
+}
+
+.badge-ongoing {
+    font-size: 10px;
+}
+
+.badge-upcoming {
+   font-size: 10px;
+}
+
+/* Approval (Contract) badges */
+.badge-approved {
+  font-size: 10px;
+}
+
+.badge-pending-approval {
+    font-size: 10px;
+}
+
+.badge-upcoming {
+   font-size: 10px;
+}
+
+/* Actions badges */
+.btn-confirm {
+    font-size: 10px;
+}
+
+.btn-edit {
+     font-size: 10px;
+}
+
+.btn-addon {
+     font-size: 10px;
+}
+
+.btn-archive {
+  font-size: 10px;
+}
+}
+
+/* Small devices (phones, landscape) - 577px to 767px */
+@media (min-width: 577px) and (max-width: 767px) {
+
+
+/* Add Project Button */
+.add-custom-outline-btn {
+  padding: 5px 12px;
+  font-size: 14px;
+  margin-top: 0 !important; 
+  white-space: nowrap; 
+}
+/* Style the input field with a search icon */
+  .dataTables_filter {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: center;
+    justify-content: flex-end; /* search stays right, button stays left of it */
+    gap: 10px;
+  }
+.dataTables_filter input {
+    min-width: 180px;
+    flex: 1;
+  }
+.dataTables_length {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+  }
+/* Show entries text */
+.dataTables_length label {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-size: 0;
+    gap: 0.25rem;
+  }
+/* Show entries dropdown # */
+.dataTables_length select {
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+    font-size: 0.9rem;
+  }
+.dataTables_info {
+    font-size: 0.875rem; 
+    color: #6c757d;       
+  }
+.dataTables_wrapper .dataTables_info {
+    display: flex;
+    align-items: center;
+    justify-content: start; 
+  }
+.dataTables_wrapper .row:last-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+/* General pagination wrapper */
+.dataTables_wrapper .dataTables_paginate {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: end; /* Center the pagination */
+  align-items: center;
+}
+/* Pagination buttons */
+table.dataTable thead .sorting:after {
+  content: "\f0dc"; /* Font Awesome icon code for sort */
+  font-weight: 900;
+  color: #bf2323;
+  padding-left: 5px;
+  font-size: 0.8rem; /* Adjusted for better readability */
+}
+table.dataTable thead .sorting_asc:after {
+  content: "\f0de"; /* Sort up */
+}
+table.dataTable thead .sorting_desc:after {
+  content: "\f0dd"; /* Sort down */
+}
+
+/* Main Contact Person */
+.main-contact {
+    font-size: 0.875rem;
+}
+
+/* Table */
+.table-responsive {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    border: #004085;
+}
+  .table th, .table td {
+    font-size: 11px;
+  }
+  
+  .table thead th{
+    font-size: 11px;
+  }
+
+/* Status badges */
+.badge-pending {
+    font-size: 10px;
+}
+
+.badge-completed {
+    font-size: 10px;
+}
+
+.badge-overdue {
+    font-size: 10px;
+}
+
+.badge-ongoing {
+    font-size: 10px;
+}
+
+.badge-upcoming {
+   font-size: 10px;
+}
+
+/* Approval (Contract) badges */
+.badge-approved {
+  font-size: 10px;
+}
+
+.badge-pending-approval {
+    font-size: 10px;
+}
+
+.badge-upcoming {
+   font-size: 10px;
+}
+
+/* Actions badges */
+.btn-confirm {
+    font-size: 10px;
+}
+
+.btn-edit {
+     font-size: 10px;
+}
+
+.btn-addon {
+     font-size: 10px;
+}
+
+.btn-archive {
+  font-size: 10px;
+}
+}
+
+/* Medium devices (tablets, portrait & small tablets landscape) - 768px to 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+
+/* Add Project Button */
+.add-custom-outline-btn {
+  padding: 5px 12px;
+  font-size: 14px;
+  margin-top: 0 !important; 
+  white-space: nowrap; 
+}
+
+/* Style the input field with a search icon */
+  .dataTables_filter {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: center;
+    justify-content: flex-end; /* search stays right, button stays left of it */
+    gap: 10px;
+  }
+
+.dataTables_filter input {
+    min-width: 180px;
+    flex: 1;
+  }
+
+/* Container spacing */
+.dataTables_length {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+  }
+/* Adjust spacing and height of the select dropdown */
+.dataTables_length label {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+/* Show entries */
+.dataTables_length select {
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+    font-size: 0.9rem;
+  }
+/* Align and space the info text */
+.dataTables_info {
+    font-size: 0.875rem; /* Slightly smaller text */
+    color: #6c757d;       /* Bootstrap's muted text color */
+  }
+/* Optional: if you want to center or adjust position */
+.dataTables_wrapper .dataTables_info {
+    display: flex;
+    align-items: center;
+    justify-content: start; /* or center / end depending on layout */
+  }
+/* Put pagination and info on the same row */
+.dataTables_wrapper .row:last-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+/* General pagination wrapper */
+.dataTables_wrapper .dataTables_paginate {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: end; /* Center the pagination */
+  align-items: center;
+}
+/* Pagination buttons */
+table.dataTable thead .sorting:after {
+  padding-left: 5px;
+  font-size: 0.8rem; /* Adjusted for better readability */
+}
+table.dataTable thead .sorting_asc:after {
+  content: "\f0de"; /* Sort up */
+}
+
+table.dataTable thead .sorting_desc:after {
+  content: "\f0dd"; /* Sort down */
+}
+/* Main Contact Person */
+.main-contact {
+    font-size: 0.875rem;
+}
+
+/* Table */
+  .table th, .table td {
+    font-size: 10px;
+  }
+  
+  .table thead th{
+    font-size: 10px;
+  }
+
+/* Status badges */
+.badge-pending {
+    font-size: 10px;
+}
+
+.badge-completed {
+    font-size: 10px;
+}
+
+.badge-overdue {
+    font-size: 10px;
+}
+
+.badge-ongoing {
+    font-size: 10px;
+}
+
+.badge-upcoming {
+   font-size: 10px;
+}
+
+/* Approval (Contract) badges */
+.badge-approved {
+  font-size: 10px;
+}
+
+.badge-pending-approval {
+    font-size: 10px;
+}
+
+.badge-upcoming {
+   font-size: 10px;
+}
+
+/* Actions badges */
+.btn-confirm {
+    font-size: 10px;
+}
+
+.btn-edit {
+     font-size: 10px;
+}
+
+.btn-addon {
+     font-size: 10px;
+}
+
+.btn-archive {
+  font-size: 10px;
+}
+}
+
+/* Large devices (desktops, small laptops) - 992px to 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+/* Main Contact Person */
+.main-contact {
+    font-size: 0.875rem;
+}
+
+/* Table */
+  .table th, .table td {
+    font-size: 13px;
+  }
+  
+  .table thead th{
+    font-size: 13px;
+  }
+
+/* Status badges */
+.badge-pending {
+    font-size: 11px;
+}
+
+.badge-completed {
+    font-size: 11px;
+}
+
+.badge-overdue {
+    font-size: 11px;
+}
+
+.badge-ongoing {
+    font-size: 11px;
+}
+
+.badge-upcoming {
+   font-size: 11px;
+}
+
+/* Approval (Contract) badges */
+.badge-approved {
+  font-size: 11px;
+}
+
+.badge-pending-approval {
+    font-size: 11px;
+}
+
+.badge-upcoming {
+   font-size: 11px;
+}
+
+/* Actions badges */
+.btn-confirm {
+    background-color: #28a745; /* custom green */
+    color: white;
+    font-size: 12px;
+}
+.btn-confirm:hover {
+    background-color: #218838;
+    color: white;
+}
+
+.btn-edit {
+    background-color: #f0ad4e; /* custom yellow-orange */
+    color: white;
+     font-size: 12px;
+}
+.btn-edit:hover {
+    background-color: #ec971f;
+    color: white;
+}
+
+.btn-addon {
+    background-color: #17a2b8; /* teal */
+    color: white;
+     font-size: 12px;
+}
+.btn-addon:hover {
+    background-color: #138496;
+    color: white;
+}
+
+.btn-archive {
+    background-color: #6c757d; /* custom gray */
+    color: white;
+}
+.btn-archive:hover {
+    background-color: #5a6268;
+    color: white;
+}
+}
+
+/* Extra large devices (large desktops, wide screens) - 1200px to 1399px */
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+/* Empty Project State */
+.welcome-screen {
+  margin-top: 20px;
+}
+.proj-empty-svg{
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+.add-first-proj-title {
+  font-size: 23px;
+}
+.first-proj-desc {
+  font-size: 14px;
+}
+
+
+/* SVG user icon */
+.custom-client-badge {
+  display: inline-flex;           
+  align-items: center;          
+  margin-bottom: 1rem;           
+  margin-top: 1.5rem;             
+  padding: 0.35em 0.65em;       
+  font-size: 0.75em;            
+  font-weight: 700;            
+  line-height: 1;                 
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.375rem;         
+}
+.custom-client-badge svg {
+  vertical-align: middle;
+  margin-right: 6px;
+  width: 40px;
+  height: 40px;
+}
+
+/* Main Contact Person */
+.main-contact {
+    color: #252525;
+    font-size: 0.875rem;
+}
+
+/* Table */
+  .table th, .table td {
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  .table thead th{
+    font-size: 14px;
+  }
+
+/* Status badges */
+.badge-pending {
+    font-size: 12px;
+}
+
+.badge-completed {
+    font-size: 12px;
+}
+
+.badge-overdue {
+    font-size: 12px;
+}
+
+.badge-ongoing {
+    font-size: 12px;
+}
+
+.badge-upcoming {
+   font-size: 12px;
+}
+
+/* Approval (Contract) badges */
+.badge-approved {
+  font-size: 12px;
+}
+
+.badge-pending-approval {
+    font-size: 12px;
+}
+
+.badge-upcoming {
+   font-size: 12px;
+}
+
+/* Actions badges */
+.btn-confirm {
+    background-color: #28a745; /* custom green */
+    color: white;
+    font-size: 12px;
+}
+.btn-confirm:hover {
+    background-color: #218838;
+    color: white;
+}
+
+.btn-edit {
+    background-color: #f0ad4e; /* custom yellow-orange */
+    color: white;
+     font-size: 12px;
+}
+.btn-edit:hover {
+    background-color: #ec971f;
+    color: white;
+}
+
+.btn-addon {
+    background-color: #17a2b8; /* teal */
+    color: white;
+     font-size: 12px;
+}
+.btn-addon:hover {
+    background-color: #138496;
+    color: white;
+}
+
+.btn-archive {
+    background-color: #6c757d; /* custom gray */
+    color: white;
+}
+.btn-archive:hover {
+    background-color: #5a6268;
+    color: white;
+}
+}
+
+/* Extra extra large devices (very wide desktops, TVs) - 1400px and up */
+@media (min-width: 1400px) {
+
+/* SVG user icon */
+.custom-client-badge {
+  display: inline-flex;           
+  align-items: center;          
+  margin-bottom: 1rem;           
+  margin-top: 1.5rem;             
+  padding: 0.35em 0.65em;       
+  font-size: 0.75em;            
+  font-weight: 700;            
+  line-height: 1;                 
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.375rem;         
+}
+.custom-client-badge svg {
+  vertical-align: middle;
+  margin-right: 6px;
+  width: 40px;
+  height: 40px;
+}
+
+/* Main Contact Person */
+.main-contact {
+    color: #252525;
+    font-size: 0.875rem;
+}
+
+/* Table */
+  .table th, .table td {
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  .table thead th{
+    background-color: #183b4e;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  
+.table tbody tr {
+    border-radius: 3px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.table a {
+    text-decoration: none;
+    color: #2a4a3d;
+    font-weight: bold;
+  }
+
+/* Status badges */
+.badge-pending {
+    background-color: #ffe58f;
+    color: #664d03;
+    font-size: 12px;
+}
+
+.badge-completed {
+    background-color: #c5c6ca;
+    color: #1f1f1f;
+        font-size: 12px;
+}
+
+.badge-overdue {
+    background-color: #ffcccc;
+    color: #a00000;
+    font-size: 12px;
+}
+
+.badge-ongoing {
+    background-color: #e0f7ff;
+    color: #004085;
+    font-size: 12px;
+}
+
+.badge-upcoming {
+   background-color: #e2e3e5;  
+    color: #383d41;           
+   font-size: 12px;
+}
+
+/* Approval (Contract) badges */
+.badge-approved {
+    background-color: #d1f0d1;
+    color: #0f5132;
+  font-size: 12px;
+}
+
+.badge-pending-approval {
+    background-color: #ffe58f;
+    color: #664d03;
+   font-size: 12px;
+}
+
+/* Actions badges */
+.btn-confirm {
+    background-color: #28a745; /* custom green */
+    color: white;
+    font-size: 12px;
+}
+.btn-confirm:hover {
+    background-color: #218838;
+    color: white;
+}
+
+.btn-edit {
+    background-color: #f0ad4e; /* custom yellow-orange */
+    color: white;
+     font-size: 12px;
+}
+.btn-edit:hover {
+    background-color: #ec971f;
+    color: white;
+}
+
+.btn-addon {
+    background-color: #17a2b8; /* teal */
+    color: white;
+     font-size: 12px;
+}
+.btn-addon:hover {
+    background-color: #138496;
+    color: white;
+}
+
+.btn-archive {
+    background-color: #6c757d; /* custom gray */
+    color: white;
+}
+.btn-archive:hover {
+    background-color: #5a6268;
+    color: white;
+}
+
+}
