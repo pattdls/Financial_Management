@@ -6,6 +6,8 @@ A Financial Management web application for managing client records, project budg
 
 ![Dashboard Interface](docs/dashboard-preview.png)
 
+Walkthrough Video: https://drive.google.com/file/d/1lsPwc-eaIhMFgmUH08LJOmx7PiAakyBc/view?usp=sharing
+
 ## Overview
 
 This system is designed to help a business track:
